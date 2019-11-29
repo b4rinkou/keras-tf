@@ -201,7 +201,7 @@ def predict(args_):
 def parse_args(fname):
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', '-p', default='test/{0}'.format(fname), help='image path')
-    print parser.parse_args()
+    print (parser.parse_args())
     return parser.parse_args()
 
 
@@ -213,4 +213,4 @@ if __name__ == '__main__':
     args = parse_args(a[1])
     predict(args)
 
-    print "finish!"
+    print ("finish!")
